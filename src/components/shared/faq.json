@@ -1,15 +1,15 @@
 {
   "collectionName": "components_shared_faqs",
   "info": {
-    "displayName": "FAQ"
+    "displayName": "faq"
   },
   "options": {},
   "attributes": {
-    "Question": {
-      "type": "text"
+    "question": {
+      "type": "string"
     },
-    "Answer": {
-      "type": "blocks"
+    "answer": {
+      "type": "text"
     }
   },
   "config": {}

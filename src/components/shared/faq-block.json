@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "Item": {
+    "faq": {
       "type": "component",
       "component": "shared.faq",
       "repeatable": true

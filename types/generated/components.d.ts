@@ -3,11 +3,11 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface SharedFaq extends Struct.ComponentSchema {
   collectionName: 'components_shared_faqs';
   info: {
-    displayName: 'FAQ';
+    displayName: 'faq';
   };
   attributes: {
-    Answer: Schema.Attribute.Blocks;
-    Question: Schema.Attribute.Text;
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.String;
   };
 }
 
@@ -17,7 +17,7 @@ export interface SharedFaqBlock extends Struct.ComponentSchema {
     displayName: 'FAQ Block';
   };
   attributes: {
-    Item: Schema.Attribute.Component<'shared.faq', true>;
+    faq: Schema.Attribute.Component<'shared.faq', true>;
   };
 }
 
